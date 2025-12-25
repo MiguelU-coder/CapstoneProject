@@ -1,0 +1,131 @@
+.gradient-background {
+  background: linear-gradient(120deg, #0b3d91, #1e90ff, #00b7ff);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  border-radius: 1%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+    border-radius: 1%;
+  }
+  50% {
+    background-position: 100% 50%;
+    border-radius: 1%;
+  }
+  100% {
+    background-position: 0% 50%;
+    border-radius: 1%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 10px;
+}
+.lead{
+  color: white;
+}
+#footer h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+#footer a {
+  color: white;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+
+  header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  header nav ul {
+    gap: 12px;
+  }
+
+  section .display-5 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .card-cover {
+    height: 300px;
+  }
+}
+.feature-icon{
+  align-items: center;
+  justify-content: center;
+}
+
+section .list-group {
+  max-width: 550px;
+  margin: auto;
+}
+
+.list-group-item-check {
+  position: absolute;
+  clip-path: inset(50%);
+}
+
+.list-group-item {
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  padding: 18px 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+.list-group-item span {
+  padding: 5px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.list-group-item::before {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #c5c5c5;
+  border-radius: 50%;
+  background-color: white;
+}
+
+
+.list-group-item-check:checked + label::before {
+  height: 0.7rem;
+  width: 0.7rem;
+  border-color: #0d6efd;   
+  background-color: #0d6efd;
+  box-shadow: 0 0 0 4px rgba(13,110,253,0.3); 
+}
+
+.list-group-item-check:checked + label {
+  border-color: #0d6efd;
+  background-color: #f4f8ff;
+  color: #0d6efd;
+}
+
+.list-group-item-check:checked + label span {
+  color: #0d6efd;
+}
+
